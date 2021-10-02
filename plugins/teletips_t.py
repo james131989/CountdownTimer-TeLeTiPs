@@ -27,5 +27,4 @@ HELP_TEXT = """
 <code>/set 86400 "TIME LEFT UNTIL NEW YEAR"</code>
 
 > You can send <code>/stopc</code> to stop all countdowns. 
-
-#Copyright ©️ 2021 TeLe TiPs. All Rights Reserved.
+"""
