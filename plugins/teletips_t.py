@@ -9,7 +9,6 @@ START_TEXT = 'Heya,\nMy name is **Countdown Timer** ⏰\n\nI can countdown to yo
 
 GROUP_TEXT="""
 👥 <u>**Help & Support Groups**</u>
-> Feel free to report any issues regarding this service.
 """
 
 HELP_TEXT = """
@@ -28,13 +27,5 @@ HELP_TEXT = """
 <code>/set 86400 "TIME LEFT UNTIL NEW YEAR"</code>
 
 > You can send <code>/stopc</code> to stop all countdowns. 
-
-That's all! 🥳
-
-**⚠️WARNING:**
-DO NOT do more than two (2) countdowns at the same time using the same bot. (Reason: Telegram floodwait)
-"""
-
-TUTORIAL_TEXT = "💡 Click the **🎥 Video** button to watch how to create this bot for your group."
 
 #Copyright ©️ 2021 TeLe TiPs. All Rights Reserved.
