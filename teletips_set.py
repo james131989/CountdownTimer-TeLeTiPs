@@ -26,12 +26,11 @@ TELETIPS_MAIN_MENU_BUTTONS = [
                 InlineKeyboardButton('❓ HELP', callback_data="HELP_CALLBACK")
             ],
             [
-                InlineKeyboardButton('👥 GROUP', callback_data="GROUP_CALLBACK"),
-                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/teletipsofficialchannel'),
-                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/thakshakar')
+                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/taylorswift13fanpage'),
+                InlineKeyboardButton('👨‍💻 DISCOGRAPHY', url='https://t.me/taylorflac'),
             ],
             [
-                InlineKeyboardButton('➕ CREATE YOUR BOT ➕', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('➕ CREATOR ➕', url='https://t.me/taylife')
             ]
         ]
 
@@ -107,12 +106,11 @@ async def callback_query(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('❓ HELP', callback_data="HELP_CALLBACK")
             ],
             [
-                InlineKeyboardButton('👥 GROUP', callback_data="GROUP_CALLBACK"),
-                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/teletipsofficialchannel'),
-                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/thakshakar')
+                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/taylorswift13fanpage'),
+                InlineKeyboardButton('👨‍💻 DISCOGRAPHY', url='https://t.me/taylorflac'),
             ],
             [
-                InlineKeyboardButton('➕ CREATE YOUR BOT ➕', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('➕ CREATOR ➕', url='https://t.me/taylife')
             ]
         ]
         reply_markup = InlineKeyboardMarkup(TELETIPS_START_BUTTONS)
@@ -143,49 +141,49 @@ async def set_timer(client, message):
             if 0<user_input_time<=10:
                 while user_input_time and not stoptimer:
                     s=user_input_time%60
-                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**s**\n\n<i>"Your **Time** Is Limited, So Don\'t Waste It Living Someone Else\'s Life"</i>\n      - Steve Jobs'.format(user_input_event, s)
+                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**s**\n\n<i>"Time Left for ❤️ **Red (Taylor\'s Version)**❤️"</i>'.format(user_input_event, s)
                     finish_countdown = await get_user_input_time.edit(Countdown_TeLe_TiPs)
                     await asyncio.sleep(1)
                     user_input_time -=1
-                await finish_countdown.edit("🚨 Beep! Beep!! **TIME'S UP!!!**")
+                await finish_countdown.edit("❤️ **Red (Taylor\'s Version)**❤️ is Here!! Go Stream!!!!!!")
             elif 10<user_input_time<60:
                 while user_input_time>0 and not stoptimer:
                     s=user_input_time%60
-                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**s**\n\n<i>"Your **Time** Is Limited, So Don\'t Waste It Living Someone Else\'s Life"</i>\n      - Steve Jobs'.format(user_input_event, s)
+                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**s**\n\n<i>"Time Left for ❤️ **Red (Taylor\'s Version)**❤️"</i>'.format(user_input_event, s)
                     finish_countdown = await get_user_input_time.edit(Countdown_TeLe_TiPs)
                     await asyncio.sleep(3)
                     user_input_time -=3
-                await finish_countdown.edit("🚨 Beep! Beep!! **TIME'S UP!!!**")
+                await finish_countdown.edit("❤️ **Red (Taylor\'s Version)**❤️ is Here!! Go Stream!!!!!!")
             elif 60<=user_input_time<3600:
                 while user_input_time>0 and not stoptimer:
                     m=user_input_time%3600//60
                     s=user_input_time%60
-                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**m** : {:02d}**s**\n\n<i>"Your **Time** Is Limited, So Don\'t Waste It Living Someone Else\'s Life"</i>\n      - Steve Jobs'.format(user_input_event, m, s)
+                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**m** : {:02d}**s**\n\n<i>"Time Left for ❤️ **Red (Taylor\'s Version)**❤️"</i>'.format(user_input_event, m, s)
                     finish_countdown = await get_user_input_time.edit(Countdown_TeLe_TiPs)
                     await asyncio.sleep(3)
                     user_input_time -=3
-                await finish_countdown.edit("🚨 Beep! Beep!! **TIME'S UP!!!**")
+                await finish_countdown.edit("❤️ **Red (Taylor\'s Version)**❤️ is Here!! Go Stream!!!!!!")
             elif 3600<=user_input_time<86400:
                 while user_input_time>0 and not stoptimer:
                     h=user_input_time%(3600*24)//3600
                     m=user_input_time%3600//60
                     s=user_input_time%60
-                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**h** : {:02d}**m** : {:02d}**s**\n\n<i>"Your **Time** Is Limited, So Don\'t Waste It Living Someone Else\'s Life"</i>\n      - Steve Jobs'.format(user_input_event, h, m, s)
+                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**h** : {:02d}**m** : {:02d}**s**\n\n<i>"Time Left for ❤️ **Red (Taylor\'s Version)**❤️"</i>'.format(user_input_event, h, m, s)
                     finish_countdown = await get_user_input_time.edit(Countdown_TeLe_TiPs)
                     await asyncio.sleep(7)
                     user_input_time -=7
-                await finish_countdown.edit("🚨 Beep! Beep!! **TIME'S UP!!!**")
+                await finish_countdown.edit("❤️ **Red (Taylor\'s Version)**❤️ is Here!! Go Stream!!!!!!")
             elif user_input_time>=86400:
                 while user_input_time>0 and not stoptimer:
                     d=user_input_time//(3600*24)
                     h=user_input_time%(3600*24)//3600
                     m=user_input_time%3600//60
                     s=user_input_time%60
-                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**d** : {:02d}**h** : {:02d}**m** : {:02d}**s**\n\n<i>"Your **Time** Is Limited, So Don\'t Waste It Living Someone Else\'s Life"</i>\n      - Steve Jobs'.format(user_input_event, d, h, m, s)
+                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**d** : {:02d}**h** : {:02d}**m** : {:02d}**s**\n\n<i>"Time Left for ❤️ **Red (Taylor\'s Version)**❤️"</i>'.format(user_input_event, d, h, m, s)
                     finish_countdown = await get_user_input_time.edit(Countdown_TeLe_TiPs)
                     await asyncio.sleep(9)
                     user_input_time -=9
-                await finish_countdown.edit("🚨 Beep! Beep!! **TIME'S UP!!!**")
+                await finish_countdown.edit("❤️ **Red (Taylor\'s Version)**❤️ is Here!! Go Stream!!!!!!")
             else:
                 await get_user_input_time.edit(f"🤷🏻‍♂️ I can't countdown from {user_input_time}")
                 await get_user_input_time.unpin()
